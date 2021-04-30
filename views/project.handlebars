@@ -1,0 +1,16 @@
+<section class="container">
+    <h3 class="project-name">{{project.name}}</h3>
+    <section class="flex-row justify-center">
+        {{#each project.name as |project|}}
+        <section class="card">
+            <a href="/project/{{id}}">
+            <header>{{name}}</header>
+
+            <div class="card-body">
+                <p>Project Desctiption: {{description}}</p>
+            </div>
+            </a>
+        </section>
+        {{/each}}
+    </section>
+</section>
